@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/login.css" rel="stylesheet">
+    <script src="../scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="navbar navbar-expand-md" id="navcolor">
+ 
+    <div class="container px-4"> 
+      
+    <a href="../index.html" class="navbar-brand d-md-none fs-1 text-light fw-bold">CrediX</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center custom-gap-nav mx-auto" id="navbarContent">
+            <a href="#" onclick="goTo('../index.html')" class="navbar-brand fs-1 fw-bold  d-none d-md-block text-light" 
+            id="desktop-logo">CrediX</a>
+
+    <ul class="navbar-nav  mb-2 mb-lg-0">
+      <li><a href="#" onclick="goTo('../index.html')" class="nav-link fs-5 px-2 link-secondary text-light">Inicio</a></li>
+      <li><a href="#" class="nav-link fs-5 px-2 text-light">Beneficios</a></li>
+      <li><a href="#" class="nav-link fs-5 px-2 text-light">Cartões</a></li>
+      <li><a href="#" class="nav-link fs-5 px-2 text-light">FAQs</a></li>
+      <li><a href="#" class="nav-link fs-5 px-2 text-light ">Sobre</a></li>
+    </ul>
+<div class="d-flex flex-column flex-md-row">
+  <a href="login.html" class="nav-link fs-5 px-2 text-light d-md-none">Login</a>
+  <a href="register.html" class="nav-link fs-5 px-2 text-light d-md-none">Abra sua conta</a>
+
+  <button type="button" class="btn btn-lg btn-light me-2 d-none d-md-inline-block"
+    onclick="goTo('login.html')">Login</button>
+
+  <button type="button" class="btn btn-lg btn-primary d-none d-md-inline-block"
+    onclick="goTo('register.html')">Abra sua conta</button>
+</div>
+    </div>
+    </div> 
+  </header>
+
+  
+
+<section class="hero-section">
+  <div class="container py-5">
+    <div class="row align-items-start">
+
+
+      <div class="col-md-6 offset-md-1 text-center text-md-start">
+
+        <h1 class="text-white fw-bold mb-3">
+          Entre na sua conta CrediX
+        </h1>
+
+        <p class="text-white fs-5 mb-4">
+Acesse sua conta com segurança usando seu CPF e senha.
+        </p>
+
+
+        <div class="card shadow p-4 text-start mt-4" id="login-card">
+
+          <form class="needs-validation" novalidate>
+
+            <h5 class="mb-3">Login</h5>
+
+
+<div class="mb-3">
+  <div class="input-group">
+    <span class="input-group-text">
+      <i class="bi bi-credit-card-2-front"></i>
+    </span>
+    <input
+      type="text"
+      class="form-control"
+      id="cpf"
+      placeholder="CPF"
+      maxlength="14"
+      required
+      oninput="maskCPF(this)"
+    >
+    <div class="invalid-feedback">
+      Informe um CPF válido.
+    </div>
+  </div>
+</div>
+
+            <div class="mb-3">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-lock"></i>
+                </span>
+                <input type="password" id="password" class="form-control" placeholder="Senha" minlength="6" required>
+                <span class="input-group-text bg-white" style="cursor:pointer"
+                  onclick="togglePassword('password', this)">
+                  <i class="bi bi-eye"></i>
+                </span>
+                <div class="invalid-feedback">
+                  A senha deve ter pelo menos 6 caracteres.
+                </div>
+              </div>
+            </div>
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="remember">
+    <label class="form-check-label" for="remember">Lembrar de mim</label>
+  </div>
+
+  <a href="#" class="small text-decoration-none">Esqueci minha senha</a>
+</div>
+
+            <button type="submit" class="btn btn-primary btn-lg w-100">
+              Criar conta
+            </button>
+
+            <p class="text-center mt-3 mb-0">
+              Ainda não tem conta? <a href="register.html">Criar conta</a>
+</a>
+            </p>
+<p class="text-center text-muted mt-3 small mb-0">
+  Acesso protegido com criptografia. 🔒
+</p>
+          </form>
+        </div>
+      </div>
+
+<div class="col-md-5 position-relative text-center mt-5 mt-md-0">
+  <img
+    src="../imgs/girlcell.png"
+    alt="App CrediX"
+    class="img-fluid"
+    id="hero-image"
+  >
+</div>
+
+    </div>
+  </div>
+</section>
+    
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  
+<script src="../scripts/login.js"></script>
+
+
+</body>
+</html>

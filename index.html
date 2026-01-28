@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+        <link href="styles/home.css" rel="stylesheet">
+        <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="navbar navbar-expand-md" id="navcolor">
+ 
+    <div class="container px-4"> 
+      
+    <a href="index.html" class="navbar-brand d-md-none fs-1 text-light fw-bold">CrediX</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center custom-gap-nav mx-auto" id="navbarContent">
+            <a href="#" onclick="goTo('index.html')" class="navbar-brand fs-1 fw-bold  d-none d-md-block text-light" 
+            id="desktop-logo">CrediX</a>
+
+    <ul class="navbar-nav  mb-2 mb-lg-0">
+      <li><a href="#" onclick="goTo('index.html')" class="nav-link fs-5 px-2 link-secondary text-light">Inicio</a></li>
+      <li><a href="#" class="nav-link fs-5 px-2 text-light">Beneficios</a></li>
+      <li><a href="#" class="nav-link fs-5 px-2 text-light">Cartões</a></li>
+      <li><a href="#" class="nav-link fs-5 px-2 text-light">FAQs</a></li>
+      <li><a href="#" class="nav-link fs-5 px-2 text-light ">Sobre</a></li>
+    </ul>
+<div class="d-flex flex-column flex-md-row">
+  <a href="pages/login.html" class="nav-link fs-5 px-2 text-light d-md-none">Login</a>
+  <a href="pages/register.html" class="nav-link fs-5 px-2 text-light d-md-none">Abra sua conta</a>
+
+  <button type="button" class="btn btn-lg btn-light me-2 d-none d-md-inline-block"
+    onclick="goTo('pages/login.html')">Login</button>
+
+  <button type="button" class="btn btn-lg btn-primary d-none d-md-inline-block"
+    onclick="goTo('pages/register.html')">Abra sua conta</button>
+</div>
+    </div>
+    </div> 
+  </header>
+
+  
+
+<section class="hero-section">
+<div class=" container p-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 offset-md-1 text-center text-md-start">
+<h1 id="cardtext" class="text-white fw-bold">Seu cartão,<br> do seu jeito.</h1>
+<p  id="abrircontatxt" class="text-white fs-4 mb-4">Abra sua conta grátis em 5 minutos <br> 
+  e controle tudo pelo app.</p>
+    <button type="button" id="mycard" class="btn btn-primary btn-lg" onclick="goTo('pages/register.html')">Quero meu cartão</button>
+</div>
+    <div class="col-md-5 position-relative">
+        <img src="imgs/cell.png" id="cellphone" alt="App Store" 
+        class="image-fluid" style="width: 296px; height: 519px;">
+        </div>
+  </div>
+</div>
+    
+
+<section class=" custom-spacing info-section text-center">
+<div class="container">
+  <h2 id=infotitle class="fs-1 mb-5">Por que escolher a CrediX?</h2>
+  <div class="row">
+    <div class="col-md-3 mb-4">
+      <img src="imgs/card.png" alt="Cartão de Crédito" class="mb-3">
+      <h5 id="infosec">Sem anuidade</h5>
+    </div>
+    <div class="col-md-3 mb-4">
+      <img src="imgs/card2.png" alt="Banco Móvel" class="mb-3">
+      <h5 id="infosec">Cartão virtual instananeo</h5>
+    </div>
+    <div class="col-md-3 mb-4">
+      <img src="imgs/card3.png" alt="Recompensas" class="mb-3">
+      <h5 id="infosec">Limite personalizado</h5>
+    </div>
+ <div class="col-md-3 mb-4">
+      <img src="imgs/card4.png" alt="Recompensas" class="mb-3">
+      <h5 id="infosec">Atendimento <br> 24h</h5>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  
+</body>
+</html>

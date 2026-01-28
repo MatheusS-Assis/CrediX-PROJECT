@@ -1,0 +1,95 @@
+#cardtext {
+  font-size: 3rem;
+}
+
+#login-card {
+  max-width: 500px;           
+  padding: 1.75rem;              
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.form-control {
+  border-radius: 0 10px 10px 0;
+  padding: 0.55rem 0.75rem;      
+  font-size: 0.95rem;
+}
+
+.input-group-text {
+  border-radius: 10px 0 0 10px;
+  padding: 0.55rem 0.75rem;
+  background-color: #f8f9fa;
+}
+
+.btn-primary {
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(22, 102, 255, 0.35);
+}
+
+@media (max-width: 576px) {
+  .register-section {
+    padding: 2rem 1rem;
+  }
+
+  #login-card {
+    padding: 1.5rem;
+  }
+}
+
+#hero-image {
+  max-width: 500px;
+  transform: translateY(-40px);
+}
+
+@media (max-width: 768px) {
+  #hero-image {
+    display: none;
+  }
+}
+
+#login-card .form-control:focus{
+  border-color: rgba(87,36,209,0.45);
+  box-shadow: 0 0 0 .25rem rgba(87,36,209,0.15);
+}
+
+#hero-image{
+  animation: floaty 4s ease-in-out infinite;
+}
+
+@keyframes floaty{
+  0%, 100% { transform: translateY(-8px); }
+  50% { transform: translateY(8px); }
+}
+
+#login-card{
+  background: rgba(255, 255, 255, 0.82) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(100px);
+}
+
+
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: inherit;
+}
+
+.was-validated .form-check-input:valid {
+  border-color: #dee2e6 !important;
+  background-image: none !important;
+}
+
+.was-validated .form-check-input:valid:checked {
+  background-color: #5b3df5 !important;
+  border-color: #5b3df5 !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e") !important;
+}
+
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: inherit !important;
+}
